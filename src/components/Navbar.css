@@ -1,0 +1,38 @@
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  border: none;
+}
+
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a.active {
+  color: white;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #FFA500;
+  /* bright orange */
+  text-shadow:
+    0 0 6px #FFA500,
+    0 0 12px #FFA500,
+    0 0 18px #FFA500;
+}
